@@ -1,0 +1,1612 @@
+ sayed-umair-ali in ~/AraOS on 🌱 main 
+❯ make run-qemu
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/ata.c -Iinclude/ -c -o obj/ata.o
+In file included from src/../include/io.h:5,
+                 from src/ata.c:2:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/calculator.c -Iinclude/ -c -o obj/calculator.o
+In file included from src/calculator.c:3:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/calculator.c:2:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/crypto.c -Iinclude/ -c -o obj/crypto.o
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/easter.c -Iinclude/ -c -o obj/easter.o
+In file included from src/easter.c:2:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/fat32.c -Iinclude/ -c -o obj/fat32.o
+In file included from src/fat32.c:3:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/fat32.c:4:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/io.c -Iinclude/ -c -o obj/io.o
+In file included from src/../include/io.h:5,
+                 from src/io.c:1:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/kernel.c -Iinclude/ -c -o obj/kernel.o
+In file included from src/kernel.c:4:
+src/../include/kbd.h:8:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    8 | #define CTL (1 << 1)
+      |             ^
+src/../include/kbd.h:32:16: note: in expansion of macro ‘CTL’
+   32 |         [0x1D] CTL,
+      |                ^~~
+src/../include/kbd.h:7:15: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    7 | #define SHIFT (1 << 0)
+      |               ^
+src/../include/kbd.h:33:16: note: in expansion of macro ‘SHIFT’
+   33 |         [0x2A] SHIFT,
+      |                ^~~~~
+src/../include/kbd.h:7:15: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    7 | #define SHIFT (1 << 0)
+      |               ^
+src/../include/kbd.h:34:16: note: in expansion of macro ‘SHIFT’
+   34 |         [0x36] SHIFT,
+      |                ^~~~~
+src/../include/kbd.h:9:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    9 | #define ALT (1 << 2)
+      |             ^
+src/../include/kbd.h:35:16: note: in expansion of macro ‘ALT’
+   35 |         [0x38] ALT,
+      |                ^~~
+src/../include/kbd.h:8:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    8 | #define CTL (1 << 1)
+      |             ^
+src/../include/kbd.h:36:16: note: in expansion of macro ‘CTL’
+   36 |         [0x9D] CTL,
+      |                ^~~
+src/../include/kbd.h:9:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    9 | #define ALT (1 << 2)
+      |             ^
+src/../include/kbd.h:37:16: note: in expansion of macro ‘ALT’
+   37 |         [0xB8] ALT};
+      |                ^~~
+src/../include/kbd.h:10:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   10 | #define CAPSLOCK (1 << 3)
+      |                  ^
+src/../include/kbd.h:41:16: note: in expansion of macro ‘CAPSLOCK’
+   41 |         [0x3A] CAPSLOCK,
+      |                ^~~~~~~~
+src/../include/kbd.h:11:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   11 | #define NUMLOCK (1 << 4)
+      |                 ^
+src/../include/kbd.h:42:16: note: in expansion of macro ‘NUMLOCK’
+   42 |         [0x45] NUMLOCK,
+      |                ^~~~~~~
+src/../include/kbd.h:12:20: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   12 | #define SCROLLLOCK (1 << 5)
+      |                    ^
+src/../include/kbd.h:43:16: note: in expansion of macro ‘SCROLLLOCK’
+   43 |         [0x46] SCROLLLOCK};
+      |                ^~~~~~~~~~
+src/../include/kbd.h:58:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   58 |         [0x9C] '\n',                        // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:59:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   59 |         [0xB5] '/',                         // KP_Div
+      |                ^~~
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:60:16: note: in expansion of macro ‘KEY_UP’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:60:16: note: in expansion of macro ‘KEY_UP’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:60:31: note: in expansion of macro ‘KEY_DN’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:60:31: note: in expansion of macro ‘KEY_DN’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:61:16: note: in expansion of macro ‘KEY_PGUP’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:61:16: note: in expansion of macro ‘KEY_PGUP’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:61:33: note: in expansion of macro ‘KEY_PGDN’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:61:33: note: in expansion of macro ‘KEY_PGDN’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:62:16: note: in expansion of macro ‘KEY_LF’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:62:16: note: in expansion of macro ‘KEY_LF’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:62:31: note: in expansion of macro ‘KEY_RT’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:62:31: note: in expansion of macro ‘KEY_RT’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:63:16: note: in expansion of macro ‘KEY_HOME’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:63:16: note: in expansion of macro ‘KEY_HOME’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:63:33: note: in expansion of macro ‘KEY_END’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:63:33: note: in expansion of macro ‘KEY_END’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:64:16: note: in expansion of macro ‘KEY_INS’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:64:16: note: in expansion of macro ‘KEY_INS’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:64:32: note: in expansion of macro ‘KEY_DEL’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:64:32: note: in expansion of macro ‘KEY_DEL’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/../include/kbd.h:79:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   79 |         [0x9C] '\n',                        // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:80:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   80 |         [0xB5] '/',                         // KP_Div
+      |                ^~~
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:81:16: note: in expansion of macro ‘KEY_UP’
+   81 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:81:16: note: in expansion of macro ‘KEY_UP’
+   81 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:82:16: note: in expansion of macro ‘KEY_DN’
+   82 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:82:16: note: in expansion of macro ‘KEY_DN’
+   82 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:83:16: note: in expansion of macro ‘KEY_PGUP’
+   83 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:83:16: note: in expansion of macro ‘KEY_PGUP’
+   83 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:84:16: note: in expansion of macro ‘KEY_PGDN’
+   84 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:84:16: note: in expansion of macro ‘KEY_PGDN’
+   84 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:85:16: note: in expansion of macro ‘KEY_LF’
+   85 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:85:16: note: in expansion of macro ‘KEY_LF’
+   85 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:86:16: note: in expansion of macro ‘KEY_RT’
+   86 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:86:16: note: in expansion of macro ‘KEY_RT’
+   86 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:87:16: note: in expansion of macro ‘KEY_HOME’
+   87 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:87:16: note: in expansion of macro ‘KEY_HOME’
+   87 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:88:16: note: in expansion of macro ‘KEY_END’
+   88 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:88:16: note: in expansion of macro ‘KEY_END’
+   88 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:89:16: note: in expansion of macro ‘KEY_INS’
+   89 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:89:16: note: in expansion of macro ‘KEY_INS’
+   89 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:90:16: note: in expansion of macro ‘KEY_DEL’
+   90 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:90:16: note: in expansion of macro ‘KEY_DEL’
+   90 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:105:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+  105 |         [0x9C] '\n',                        // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:106:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+  106 |         [0xB5] '/',                         // KP_Div
+      |                ^~~
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:107:16: note: in expansion of macro ‘KEY_UP’
+  107 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:107:16: note: in expansion of macro ‘KEY_UP’
+  107 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:108:16: note: in expansion of macro ‘KEY_DN’
+  108 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:108:16: note: in expansion of macro ‘KEY_DN’
+  108 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:109:16: note: in expansion of macro ‘KEY_PGUP’
+  109 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:109:16: note: in expansion of macro ‘KEY_PGUP’
+  109 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:110:16: note: in expansion of macro ‘KEY_PGDN’
+  110 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:110:16: note: in expansion of macro ‘KEY_PGDN’
+  110 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:111:16: note: in expansion of macro ‘KEY_LF’
+  111 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:111:16: note: in expansion of macro ‘KEY_LF’
+  111 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:112:16: note: in expansion of macro ‘KEY_RT’
+  112 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:112:16: note: in expansion of macro ‘KEY_RT’
+  112 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:113:16: note: in expansion of macro ‘KEY_HOME’
+  113 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:113:16: note: in expansion of macro ‘KEY_HOME’
+  113 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:114:16: note: in expansion of macro ‘KEY_END’
+  114 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:114:16: note: in expansion of macro ‘KEY_END’
+  114 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:115:16: note: in expansion of macro ‘KEY_INS’
+  115 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:115:16: note: in expansion of macro ‘KEY_INS’
+  115 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:116:16: note: in expansion of macro ‘KEY_DEL’
+  116 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:116:16: note: in expansion of macro ‘KEY_DEL’
+  116 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:127:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+  127 |         [0x9C] '\r',   // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:28:14: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   28 | #define C(x) (x - '@')
+      |              ^
+src/../include/kbd.h:128:16: note: in expansion of macro ‘C’
+  128 |         [0xB5] C('/'), // KP_Div
+      |                ^
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:129:16: note: in expansion of macro ‘KEY_UP’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:129:16: note: in expansion of macro ‘KEY_UP’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:129:31: note: in expansion of macro ‘KEY_DN’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:129:31: note: in expansion of macro ‘KEY_DN’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:130:16: note: in expansion of macro ‘KEY_PGUP’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:130:16: note: in expansion of macro ‘KEY_PGUP’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:130:33: note: in expansion of macro ‘KEY_PGDN’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:130:33: note: in expansion of macro ‘KEY_PGDN’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:131:16: note: in expansion of macro ‘KEY_LF’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:131:16: note: in expansion of macro ‘KEY_LF’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:131:31: note: in expansion of macro ‘KEY_RT’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:131:31: note: in expansion of macro ‘KEY_RT’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:132:16: note: in expansion of macro ‘KEY_HOME’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:132:16: note: in expansion of macro ‘KEY_HOME’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:132:33: note: in expansion of macro ‘KEY_END’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:132:33: note: in expansion of macro ‘KEY_END’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:133:16: note: in expansion of macro ‘KEY_INS’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:133:16: note: in expansion of macro ‘KEY_INS’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:133:32: note: in expansion of macro ‘KEY_DEL’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:133:32: note: in expansion of macro ‘KEY_DEL’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/kernel.c: In function ‘main’:
+src/kernel.c:85:24: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   85 |                 while (byte = scan())
+      |                        ^~~~
+src/kernel.c:341:38: warning: unused variable ‘c2’ [-Wunused-variable]
+  341 |                                 char c2 = shiftcode[byte];
+      |                                      ^~
+src/kernel.c:36:15: warning: unused variable ‘buff’ [-Wunused-variable]
+   36 |         char *buff;
+      |               ^~~~
+src/kernel.c:35:15: warning: unused variable ‘string’ [-Wunused-variable]
+   35 |         char *string;
+      |               ^~~~~~
+In file included from src/kernel.c:5:
+src/../include/string.h: At top level:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/kernel.c:16:
+src/../include/memory.h:40:26: warning: ‘kernel_heap_table’ defined but not used [-Wunused-variable]
+   40 | static struct heap_table kernel_heap_table;
+      |                          ^~~~~~~~~~~~~~~~~
+src/../include/memory.h:39:20: warning: ‘kernel_heap’ defined but not used [-Wunused-variable]
+   39 | static struct heap kernel_heap;
+      |                    ^~~~~~~~~~~
+src/../include/kbd.h:118:13: warning: ‘ctlmap’ defined but not used [-Wunused-variable]
+  118 | static char ctlmap[256] =
+      |             ^~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/math.c -Iinclude/ -c -o obj/math.o
+src/math.c: In function ‘exp’:
+src/math.c:76:21: warning: unused variable ‘it’ [-Wunused-variable]
+   76 |     static uint32_t it = 0;
+      |                     ^~
+src/math.c: In function ‘sin’:
+src/math.c:299:14: warning: unused variable ‘n’ [-Wunused-variable]
+  299 |     uint32_t n;
+      |              ^
+In file included from src/math.c:4:
+src/../include/memory.h: At top level:
+src/../include/memory.h:40:26: warning: ‘kernel_heap_table’ defined but not used [-Wunused-variable]
+   40 | static struct heap_table kernel_heap_table;
+      |                          ^~~~~~~~~~~~~~~~~
+src/../include/memory.h:39:20: warning: ‘kernel_heap’ defined but not used [-Wunused-variable]
+   39 | static struct heap kernel_heap;
+      |                    ^~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/math_shell.c -Iinclude/ -c -o obj/math_shell.o
+In file included from src/math_shell.c:5:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/math_shell.c:7:
+src/../include/random.h:7:17: warning: ‘seed’ defined but not used [-Wunused-variable]
+    7 | static uint32_t seed = 0;
+      |                 ^~~~
+src/math_shell.c: In function ‘math_shell’:
+src/math_shell.c:136:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  136 |             printk(ftoa(buff, exp(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:128:15: note: ‘buff’ was declared here
+  128 |         char *buff;
+      |               ^~~~
+src/math_shell.c:156:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  156 |             printk(ftoa(buff, ln(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:148:15: note: ‘buff’ was declared here
+  148 |         char *buff;
+      |               ^~~~
+src/math_shell.c:176:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  176 |             printk(ftoa(buff, log10(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:168:15: note: ‘buff’ was declared here
+  168 |         char *buff;
+      |               ^~~~
+src/math_shell.c:196:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  196 |             printk(ftoa(buff, sqrt(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:188:15: note: ‘buff’ was declared here
+  188 |         char *buff;
+      |               ^~~~
+src/math_shell.c:216:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  216 |             printk(ftoa(buff, abs(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:208:15: note: ‘buff’ was declared here
+  208 |         char *buff;
+      |               ^~~~
+src/math_shell.c:236:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  236 |             printk(ftoa(buff, asinh(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:228:15: note: ‘buff’ was declared here
+  228 |         char *buff;
+      |               ^~~~
+src/math_shell.c:256:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  256 |             printk(ftoa(buff, acosh(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:248:15: note: ‘buff’ was declared here
+  248 |         char *buff;
+      |               ^~~~
+src/math_shell.c:276:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  276 |             printk(ftoa(buff, atanh(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:268:15: note: ‘buff’ was declared here
+  268 |         char *buff;
+      |               ^~~~
+src/math_shell.c:296:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  296 |             printk(ftoa(buff, asin(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:288:15: note: ‘buff’ was declared here
+  288 |         char *buff;
+      |               ^~~~
+src/math_shell.c:316:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  316 |             printk(ftoa(buff, acos(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:308:15: note: ‘buff’ was declared here
+  308 |         char *buff;
+      |               ^~~~
+src/math_shell.c:336:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  336 |             printk(ftoa(buff, atan(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:328:15: note: ‘buff’ was declared here
+  328 |         char *buff;
+      |               ^~~~
+src/math_shell.c:356:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  356 |             printk(ftoa(buff, sin(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:348:15: note: ‘buff’ was declared here
+  348 |         char *buff;
+      |               ^~~~
+src/math_shell.c:376:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  376 |             printk(ftoa(buff, cos(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:368:15: note: ‘buff’ was declared here
+  368 |         char *buff;
+      |               ^~~~
+src/math_shell.c:396:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  396 |             printk(ftoa(buff, tan(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:388:15: note: ‘buff’ was declared here
+  388 |         char *buff;
+      |               ^~~~
+src/math_shell.c:416:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  416 |             printk(ftoa(buff, sinh(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:408:15: note: ‘buff’ was declared here
+  408 |         char *buff;
+      |               ^~~~
+src/math_shell.c:436:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  436 |             printk(ftoa(buff, cosh(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:428:15: note: ‘buff’ was declared here
+  428 |         char *buff;
+      |               ^~~~
+src/math_shell.c:456:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  456 |             printk(ftoa(buff, tanh(num), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:448:15: note: ‘buff’ was declared here
+  448 |         char *buff;
+      |               ^~~~
+src/math_shell.c:483:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  483 |             printk(ftoa(buff, pow(num, n), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:468:15: note: ‘buff’ was declared here
+  468 |         char *buff;
+      |               ^~~~
+src/math_shell.c:510:20: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  510 |             printk(ftoa(buff, log(num, n), 6));
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:495:15: note: ‘buff’ was declared here
+  495 |         char *buff;
+      |               ^~~~
+src/math_shell.c:528:16: warning: ‘buff’ may be used uninitialized [-Wmaybe-uninitialized]
+  528 |         printk(ftoa(buff, rand(), 6));
+      |                ^~~~~~~~~~~~~~~~~~~~~
+src/math_shell.c:526:15: note: ‘buff’ was declared here
+  526 |         char *buff;
+      |               ^~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/memory.c -Iinclude/ -c -o obj/memory.o
+src/memory.c: In function ‘memcpy’:
+src/memory.c:12:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   12 |     for (int i = 0; i < n; i++)
+      |                       ^
+src/memory.c: In function ‘heap_validate_table’:
+src/memory.c:43:38: warning: pointer of type ‘void *’ used in subtraction [-Wpointer-arith]
+   43 |     size_t table_size = (size_t)(end - ptr);
+      |                                      ^
+src/memory.c: In function ‘heap_get_start_block’:
+src/memory.c:122:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  122 |         if (bc == total_blocks)
+      |                ^~
+src/memory.c: In function ‘heap_block_to_adress’:
+src/memory.c:137:24: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+  137 |     return heap->saddr + (block * HEAP_BLOCK_SIZE);
+      |                        ^
+In file included from src/memory.c:1:
+src/memory.c: In function ‘heap_mark_blocks_taken’:
+src/../include/memory.h:15:29: warning: binary constants are a C2X feature or GCC extension
+   15 | #define HEAP_BLOCK_IS_FIRST 0b01000000
+      |                             ^~~~~~~~~~
+src/memory.c:145:67: note: in expansion of macro ‘HEAP_BLOCK_IS_FIRST’
+  145 |     HEAP_BLOCK_TABLE_ENTRY entry = HEAP_BLOCK_TABLE_ENTRY_TAKEN | HEAP_BLOCK_IS_FIRST;
+      |                                                                   ^~~~~~~~~~~~~~~~~~~
+src/../include/memory.h:14:29: warning: binary constants are a C2X feature or GCC extension
+   14 | #define HEAP_BLOCK_HAS_NEXT 0b10000000
+      |                             ^~~~~~~~~~
+src/memory.c:149:18: note: in expansion of macro ‘HEAP_BLOCK_HAS_NEXT’
+  149 |         entry |= HEAP_BLOCK_HAS_NEXT;
+      |                  ^~~~~~~~~~~~~~~~~~~
+src/../include/memory.h:14:29: warning: binary constants are a C2X feature or GCC extension
+   14 | #define HEAP_BLOCK_HAS_NEXT 0b10000000
+      |                             ^~~~~~~~~~
+src/memory.c:158:22: note: in expansion of macro ‘HEAP_BLOCK_HAS_NEXT’
+  158 |             entry |= HEAP_BLOCK_HAS_NEXT;
+      |                      ^~~~~~~~~~~~~~~~~~~
+src/memory.c: In function ‘heap_mark_blocks_free’:
+src/../include/memory.h:14:29: warning: binary constants are a C2X feature or GCC extension
+   14 | #define HEAP_BLOCK_HAS_NEXT 0b10000000
+      |                             ^~~~~~~~~~
+src/memory.c:191:23: note: in expansion of macro ‘HEAP_BLOCK_HAS_NEXT’
+  191 |         if (!(entry & HEAP_BLOCK_HAS_NEXT))
+      |                       ^~~~~~~~~~~~~~~~~~~
+src/memory.c: In function ‘heap_address_to_block’:
+src/memory.c:200:27: warning: pointer of type ‘void *’ used in subtraction [-Wpointer-arith]
+  200 |     return ((int)(address - heap->saddr) / HEAP_BLOCK_SIZE);
+      |                           ^
+In file included from src/memory.c:2:
+src/../include/string.h: At top level:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/memory.c:3:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/parsing.c -Iinclude/ -c -o obj/parsing.o
+In file included from src/parsing.c:2:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/random.c -Iinclude/ -c -o obj/random.o
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/sha224.c -Iinclude/ -c -o obj/sha224.o
+src/sha224.c: In function ‘sha224’:
+src/sha224.c:59:15: warning: binary constants are a C2X feature or GCC extension
+   59 |     WORD[j] = 0b10000000;
+      |               ^~~~~~~~~~
+src/sha224.c:126:13: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness [-Wpointer-sign]
+  126 |     sprintf(digest, "%x%x%x%x%x%x%x", h0, h1, h2, h3, h4, h5, h6);
+      |             ^~~~~~
+      |             |
+      |             unsigned char *
+In file included from src/sha224.c:3:
+src/../include/string.h:40:19: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   40 | int sprintf(char *buf, const char *fmt, ...);
+      |             ~~~~~~^~~
+src/sha224.c:40:19: warning: unused variable ‘aux’ [-Wunused-variable]
+   40 |     unsigned char aux[SIZE][4];
+      |                   ^~~
+src/../include/string.h: At top level:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/sha224.c:5:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+In file included from src/sha224.c:4:
+src/../include/memory.h:40:26: warning: ‘kernel_heap_table’ defined but not used [-Wunused-variable]
+   40 | static struct heap_table kernel_heap_table;
+      |                          ^~~~~~~~~~~~~~~~~
+src/../include/memory.h:39:20: warning: ‘kernel_heap’ defined but not used [-Wunused-variable]
+   39 | static struct heap kernel_heap;
+      |                    ^~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/sha256.c -Iinclude/ -c -o obj/sha256.o
+src/sha256.c: In function ‘sha256’:
+src/sha256.c:59:15: warning: binary constants are a C2X feature or GCC extension
+   59 |     WORD[j] = 0b10000000;
+      |               ^~~~~~~~~~
+src/sha256.c:126:13: warning: pointer targets in passing argument 1 of ‘sprintf’ differ in signedness [-Wpointer-sign]
+  126 |     sprintf(digest, "%x%x%x%x%x%x%x%x", h0, h1, h2, h3, h4, h5, h6, h7);
+      |             ^~~~~~
+      |             |
+      |             unsigned char *
+In file included from src/sha256.c:3:
+src/../include/string.h:40:19: note: expected ‘char *’ but argument is of type ‘unsigned char *’
+   40 | int sprintf(char *buf, const char *fmt, ...);
+      |             ~~~~~~^~~
+src/sha256.c:40:19: warning: unused variable ‘aux’ [-Wunused-variable]
+   40 |     unsigned char aux[SIZE][4];
+      |                   ^~~
+src/../include/string.h: At top level:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/sha256.c:5:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+In file included from src/sha256.c:4:
+src/../include/memory.h:40:26: warning: ‘kernel_heap_table’ defined but not used [-Wunused-variable]
+   40 | static struct heap_table kernel_heap_table;
+      |                          ^~~~~~~~~~~~~~~~~
+src/../include/memory.h:39:20: warning: ‘kernel_heap’ defined but not used [-Wunused-variable]
+   39 | static struct heap kernel_heap;
+      |                    ^~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/shell_history.c -Iinclude/ -c -o obj/shell_history.o
+In file included from src/../include/shell_history.h:6,
+                 from src/shell_history.c:1:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+src/shell_history.c: In function ‘insert_at_head’:
+src/shell_history.c:27:1: warning: control reaches end of non-void function [-Wreturn-type]
+   27 | }
+      | ^
+In file included from src/../include/shell_history.h:5:
+src/../include/memory.h: At top level:
+src/../include/memory.h:40:26: warning: ‘kernel_heap_table’ defined but not used [-Wunused-variable]
+   40 | static struct heap_table kernel_heap_table;
+      |                          ^~~~~~~~~~~~~~~~~
+src/../include/memory.h:39:20: warning: ‘kernel_heap’ defined but not used [-Wunused-variable]
+   39 | static struct heap kernel_heap;
+      |                    ^~~~~~~~~~~
+In file included from src/../include/shell_history.h:4:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/stack_protector.c -Iinclude/ -c -o obj/stack_protector.o
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/string.c -Iinclude/ -c -o obj/string.o
+src/string.c: In function ‘vsprintf’:
+src/string.c:375:9: warning: range expressions in switch statements are non-standard [-Wpedantic]
+  375 |         case '1' ... '9':
+      |         ^~~~
+In file included from src/string.c:1:
+src/string.c: In function ‘reverse’:
+src/../include/string.h:8:23: warning: operation on ‘*(str + (sizetype)start)’ may be undefined [-Wsequence-point]
+    8 | #define swap(a, b) (a ^= b ^= a ^= b)
+      |                       ^~
+src/string.c:476:9: note: in expansion of macro ‘swap’
+  476 |         swap(*(str + start), *(str + end));
+      |         ^~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/time.c -Iinclude/ -c -o obj/time.o
+In file included from src/time.c:2:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+In file included from src/../include/io.h:5,
+                 from src/time.c:3:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/tty.c -Iinclude/ -c -o obj/tty.o
+In file included from src/tty.c:5:
+src/../include/kbd.h:8:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    8 | #define CTL (1 << 1)
+      |             ^
+src/../include/kbd.h:32:16: note: in expansion of macro ‘CTL’
+   32 |         [0x1D] CTL,
+      |                ^~~
+src/../include/kbd.h:7:15: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    7 | #define SHIFT (1 << 0)
+      |               ^
+src/../include/kbd.h:33:16: note: in expansion of macro ‘SHIFT’
+   33 |         [0x2A] SHIFT,
+      |                ^~~~~
+src/../include/kbd.h:7:15: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    7 | #define SHIFT (1 << 0)
+      |               ^
+src/../include/kbd.h:34:16: note: in expansion of macro ‘SHIFT’
+   34 |         [0x36] SHIFT,
+      |                ^~~~~
+src/../include/kbd.h:9:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    9 | #define ALT (1 << 2)
+      |             ^
+src/../include/kbd.h:35:16: note: in expansion of macro ‘ALT’
+   35 |         [0x38] ALT,
+      |                ^~~
+src/../include/kbd.h:8:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    8 | #define CTL (1 << 1)
+      |             ^
+src/../include/kbd.h:36:16: note: in expansion of macro ‘CTL’
+   36 |         [0x9D] CTL,
+      |                ^~~
+src/../include/kbd.h:9:13: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+    9 | #define ALT (1 << 2)
+      |             ^
+src/../include/kbd.h:37:16: note: in expansion of macro ‘ALT’
+   37 |         [0xB8] ALT};
+      |                ^~~
+src/../include/kbd.h:10:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   10 | #define CAPSLOCK (1 << 3)
+      |                  ^
+src/../include/kbd.h:41:16: note: in expansion of macro ‘CAPSLOCK’
+   41 |         [0x3A] CAPSLOCK,
+      |                ^~~~~~~~
+src/../include/kbd.h:11:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   11 | #define NUMLOCK (1 << 4)
+      |                 ^
+src/../include/kbd.h:42:16: note: in expansion of macro ‘NUMLOCK’
+   42 |         [0x45] NUMLOCK,
+      |                ^~~~~~~
+src/../include/kbd.h:12:20: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   12 | #define SCROLLLOCK (1 << 5)
+      |                    ^
+src/../include/kbd.h:43:16: note: in expansion of macro ‘SCROLLLOCK’
+   43 |         [0x46] SCROLLLOCK};
+      |                ^~~~~~~~~~
+src/../include/kbd.h:58:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   58 |         [0x9C] '\n',                        // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:59:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   59 |         [0xB5] '/',                         // KP_Div
+      |                ^~~
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:60:16: note: in expansion of macro ‘KEY_UP’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:60:16: note: in expansion of macro ‘KEY_UP’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:60:31: note: in expansion of macro ‘KEY_DN’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:60:31: note: in expansion of macro ‘KEY_DN’
+   60 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:61:16: note: in expansion of macro ‘KEY_PGUP’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:61:16: note: in expansion of macro ‘KEY_PGUP’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:61:33: note: in expansion of macro ‘KEY_PGDN’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:61:33: note: in expansion of macro ‘KEY_PGDN’
+   61 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:62:16: note: in expansion of macro ‘KEY_LF’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:62:16: note: in expansion of macro ‘KEY_LF’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:62:31: note: in expansion of macro ‘KEY_RT’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:62:31: note: in expansion of macro ‘KEY_RT’
+   62 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:63:16: note: in expansion of macro ‘KEY_HOME’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:63:16: note: in expansion of macro ‘KEY_HOME’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:63:33: note: in expansion of macro ‘KEY_END’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:63:33: note: in expansion of macro ‘KEY_END’
+   63 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:64:16: note: in expansion of macro ‘KEY_INS’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:64:16: note: in expansion of macro ‘KEY_INS’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:64:32: note: in expansion of macro ‘KEY_DEL’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:64:32: note: in expansion of macro ‘KEY_DEL’
+   64 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/../include/kbd.h:79:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   79 |         [0x9C] '\n',                        // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:80:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   80 |         [0xB5] '/',                         // KP_Div
+      |                ^~~
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:81:16: note: in expansion of macro ‘KEY_UP’
+   81 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:81:16: note: in expansion of macro ‘KEY_UP’
+   81 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:82:16: note: in expansion of macro ‘KEY_DN’
+   82 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:82:16: note: in expansion of macro ‘KEY_DN’
+   82 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:83:16: note: in expansion of macro ‘KEY_PGUP’
+   83 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:83:16: note: in expansion of macro ‘KEY_PGUP’
+   83 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:84:16: note: in expansion of macro ‘KEY_PGDN’
+   84 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:84:16: note: in expansion of macro ‘KEY_PGDN’
+   84 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:85:16: note: in expansion of macro ‘KEY_LF’
+   85 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:85:16: note: in expansion of macro ‘KEY_LF’
+   85 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:86:16: note: in expansion of macro ‘KEY_RT’
+   86 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:86:16: note: in expansion of macro ‘KEY_RT’
+   86 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:87:16: note: in expansion of macro ‘KEY_HOME’
+   87 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:87:16: note: in expansion of macro ‘KEY_HOME’
+   87 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:88:16: note: in expansion of macro ‘KEY_END’
+   88 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:88:16: note: in expansion of macro ‘KEY_END’
+   88 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:89:16: note: in expansion of macro ‘KEY_INS’
+   89 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:89:16: note: in expansion of macro ‘KEY_INS’
+   89 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:90:16: note: in expansion of macro ‘KEY_DEL’
+   90 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:90:16: note: in expansion of macro ‘KEY_DEL’
+   90 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:105:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+  105 |         [0x9C] '\n',                        // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:106:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+  106 |         [0xB5] '/',                         // KP_Div
+      |                ^~~
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:107:16: note: in expansion of macro ‘KEY_UP’
+  107 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:107:16: note: in expansion of macro ‘KEY_UP’
+  107 |         [0xC8] KEY_UP,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:108:16: note: in expansion of macro ‘KEY_DN’
+  108 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:108:16: note: in expansion of macro ‘KEY_DN’
+  108 |         [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:109:16: note: in expansion of macro ‘KEY_PGUP’
+  109 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:109:16: note: in expansion of macro ‘KEY_PGUP’
+  109 |         [0xC9] KEY_PGUP,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:110:16: note: in expansion of macro ‘KEY_PGDN’
+  110 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:110:16: note: in expansion of macro ‘KEY_PGDN’
+  110 |         [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:111:16: note: in expansion of macro ‘KEY_LF’
+  111 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:111:16: note: in expansion of macro ‘KEY_LF’
+  111 |         [0xCB] KEY_LF,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:112:16: note: in expansion of macro ‘KEY_RT’
+  112 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:112:16: note: in expansion of macro ‘KEY_RT’
+  112 |         [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:113:16: note: in expansion of macro ‘KEY_HOME’
+  113 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:113:16: note: in expansion of macro ‘KEY_HOME’
+  113 |         [0x97] KEY_HOME,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:114:16: note: in expansion of macro ‘KEY_END’
+  114 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:114:16: note: in expansion of macro ‘KEY_END’
+  114 |         [0xCF] KEY_END,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:115:16: note: in expansion of macro ‘KEY_INS’
+  115 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:115:16: note: in expansion of macro ‘KEY_INS’
+  115 |         [0xD2] KEY_INS,
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:116:16: note: in expansion of macro ‘KEY_DEL’
+  116 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:116:16: note: in expansion of macro ‘KEY_DEL’
+  116 |         [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:127:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+  127 |         [0x9C] '\r',   // KP_Enter
+      |                ^~~~
+src/../include/kbd.h:28:14: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   28 | #define C(x) (x - '@')
+      |              ^
+src/../include/kbd.h:128:16: note: in expansion of macro ‘C’
+  128 |         [0xB5] C('/'), // KP_Div
+      |                ^
+src/../include/kbd.h:16:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:129:16: note: in expansion of macro ‘KEY_UP’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:16:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘200’ to ‘-56’ [-Woverflow]
+   16 | #define KEY_UP 0xC8
+      |                ^~~~
+src/../include/kbd.h:129:16: note: in expansion of macro ‘KEY_UP’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                ^~~~~~
+src/../include/kbd.h:17:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:129:31: note: in expansion of macro ‘KEY_DN’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:17:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘208’ to ‘-48’ [-Woverflow]
+   17 | #define KEY_DN 0xD0
+      |                ^~~~
+src/../include/kbd.h:129:31: note: in expansion of macro ‘KEY_DN’
+  129 |         [0xC8] KEY_UP, [0xD0] KEY_DN,
+      |                               ^~~~~~
+src/../include/kbd.h:20:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:130:16: note: in expansion of macro ‘KEY_PGUP’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:20:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘201’ to ‘-55’ [-Woverflow]
+   20 | #define KEY_PGUP 0xC9
+      |                  ^~~~
+src/../include/kbd.h:130:16: note: in expansion of macro ‘KEY_PGUP’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                ^~~~~~~~
+src/../include/kbd.h:21:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:130:33: note: in expansion of macro ‘KEY_PGDN’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:21:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘209’ to ‘-47’ [-Woverflow]
+   21 | #define KEY_PGDN 0xD1
+      |                  ^~~~
+src/../include/kbd.h:130:33: note: in expansion of macro ‘KEY_PGDN’
+  130 |         [0xC9] KEY_PGUP, [0xD1] KEY_PGDN,
+      |                                 ^~~~~~~~
+src/../include/kbd.h:18:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:131:16: note: in expansion of macro ‘KEY_LF’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:18:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘203’ to ‘-53’ [-Woverflow]
+   18 | #define KEY_LF 0xCB
+      |                ^~~~
+src/../include/kbd.h:131:16: note: in expansion of macro ‘KEY_LF’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                ^~~~~~
+src/../include/kbd.h:19:16: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:131:31: note: in expansion of macro ‘KEY_RT’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:19:16: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘205’ to ‘-51’ [-Woverflow]
+   19 | #define KEY_RT 0xCD
+      |                ^~~~
+src/../include/kbd.h:131:31: note: in expansion of macro ‘KEY_RT’
+  131 |         [0xCB] KEY_LF, [0xCD] KEY_RT,
+      |                               ^~~~~~
+src/../include/kbd.h:22:18: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:132:16: note: in expansion of macro ‘KEY_HOME’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:22:18: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘151’ to ‘-105’ [-Woverflow]
+   22 | #define KEY_HOME 0x97
+      |                  ^~~~
+src/../include/kbd.h:132:16: note: in expansion of macro ‘KEY_HOME’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                ^~~~~~~~
+src/../include/kbd.h:23:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:132:33: note: in expansion of macro ‘KEY_END’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:23:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘207’ to ‘-49’ [-Woverflow]
+   23 | #define KEY_END 0xCF
+      |                 ^~~~
+src/../include/kbd.h:132:33: note: in expansion of macro ‘KEY_END’
+  132 |         [0x97] KEY_HOME, [0xCF] KEY_END,
+      |                                 ^~~~~~~
+src/../include/kbd.h:24:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:133:16: note: in expansion of macro ‘KEY_INS’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:24:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘210’ to ‘-46’ [-Woverflow]
+   24 | #define KEY_INS 0xD2
+      |                 ^~~~
+src/../include/kbd.h:133:16: note: in expansion of macro ‘KEY_INS’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                ^~~~~~~
+src/../include/kbd.h:25:17: warning: obsolete use of designated initializer without ‘=’ [-Wpedantic]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:133:32: note: in expansion of macro ‘KEY_DEL’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/../include/kbd.h:25:17: warning: overflow in conversion from ‘int’ to ‘char’ changes value from ‘211’ to ‘-45’ [-Woverflow]
+   25 | #define KEY_DEL 0xD3
+      |                 ^~~~
+src/../include/kbd.h:133:32: note: in expansion of macro ‘KEY_DEL’
+  133 |         [0xD2] KEY_INS, [0xD3] KEY_DEL};
+      |                                ^~~~~~~
+src/tty.c: In function ‘terminal_scroll’:
+src/tty.c:48:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   48 |     for (i = 0; i < VGA_HEIGHT; i++)
+      |                   ^
+src/tty.c:51:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   51 |         for (m = 0; m < VGA_WIDTH; m++)
+      |                       ^
+src/tty.c: In function ‘term_putc’:
+src/tty.c:115:18: warning: unused variable ‘j’ [-Wunused-variable]
+  115 |     unsigned int j = 0; // place holder for video buffer position
+      |                  ^
+src/tty.c:114:18: warning: unused variable ‘i’ [-Wunused-variable]
+  114 |     unsigned int i = 0; // place holder for text string position
+      |                  ^
+src/tty.c: In function ‘ftoa_sci’:
+src/tty.c:253:9: warning: unused variable ‘places’ [-Wunused-variable]
+  253 |     int places = 0;
+      |         ^~~~~~
+src/tty.c: In function ‘change_font_color’:
+src/tty.c:456:16: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  456 |         while (byte = scan())
+      |                ^~~~
+In file included from src/tty.c:2:
+src/../include/string.h: At top level:
+src/../include/string.h:37:14: warning: ‘sitoa’ declared ‘static’ but never defined [-Wunused-function]
+   37 | static char *sitoa(char *buf, unsigned int num, int width, enum flag_itoa flags);
+      |              ^~~~~
+src/../include/kbd.h:118:13: warning: ‘ctlmap’ defined but not used [-Wunused-variable]
+  118 | static char ctlmap[256] =
+      |             ^~~~~~
+src/../include/kbd.h:92:13: warning: ‘shiftmap’ defined but not used [-Wunused-variable]
+   92 | static char shiftmap[256] =
+      |             ^~~~~~~~
+src/../include/kbd.h:66:13: warning: ‘capslockmap’ defined but not used [-Wunused-variable]
+   66 | static char capslockmap[256] =
+      |             ^~~~~~~~~~~
+src/../include/kbd.h:39:13: warning: ‘togglecode’ defined but not used [-Wunused-variable]
+   39 | static char togglecode[256] =
+      |             ^~~~~~~~~~
+src/../include/kbd.h:30:13: warning: ‘shiftcode’ defined but not used [-Wunused-variable]
+   30 | static char shiftcode[256] =
+      |             ^~~~~~~~~
+In file included from src/tty.c:1:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+src/tty.c: In function ‘printk’:
+src/tty.c:329:13: warning: ‘s’ may be used uninitialized [-Wmaybe-uninitialized]
+  329 |             itoa(s, va_arg(parameters, int), 10);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/tty.c:328:19: note: ‘s’ was declared here
+  328 |             char *s;
+      |                   ^
+src/tty.c:336:13: warning: ‘s’ may be used uninitialized [-Wmaybe-uninitialized]
+  336 |             ftoa_fixed(s, va_arg(parameters, double));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/tty.c:335:19: note: ‘s’ was declared here
+  335 |             char *s;
+      |                   ^
+src/tty.c:343:13: warning: ‘s’ may be used uninitialized [-Wmaybe-uninitialized]
+  343 |             ftoa_sci(s, va_arg(parameters, double));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/tty.c:342:19: note: ‘s’ was declared here
+  342 |             char *s;
+      |                   ^
+src/tty.c:350:13: warning: ‘s’ may be used uninitialized [-Wmaybe-uninitialized]
+  350 |             itoa(s, va_arg(parameters, unsigned int), 16);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/tty.c:349:19: note: ‘s’ was declared here
+  349 |             char *s;
+      |                   ^
+src/tty.c:360:13: warning: ‘s’ may be used uninitialized [-Wmaybe-uninitialized]
+  360 |             itoa(s, uptr, 16);
+      |             ^~~~~~~~~~~~~~~~~
+src/tty.c:357:19: note: ‘s’ was declared here
+  357 |             char *s;
+      |                   ^
+gcc -m32 -nostdlib -fno-builtin -fno-exceptions -ffreestanding -fno-leading-underscore -Wall -Wextra -Wpedantic src/utils.c -Iinclude/ -c -o obj/utils.o
+src/utils.c: In function ‘about’:
+src/utils.c:18:18: warning: unused parameter ‘version’ [-Wunused-parameter]
+   18 | void about(char *version)
+      |            ~~~~~~^~~~~~~
+In file included from src/utils.c:2:
+src/../include/tty.h: At top level:
+src/../include/tty.h:30:23: warning: ‘default_font_color’ defined but not used [-Wunused-variable]
+   30 | static enum vga_color default_font_color = COLOR_LIGHT_GREY;
+      |                       ^~~~~~~~~~~~~~~~~~
+as --32 -o obj/loader.o src/loader.s
+ld -melf_i386 -T src/linker.ld -o ara-os.bin obj/*.o
+ld: warning: obj/loader.o: missing .note.GNU-stack section implies executable stack
+ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+ld: warning: ara-os.bin has a LOAD segment with RWX permissions
+qemu-system-i386 -kernel ara-os.bin -serial stdio -drive file=disk.img,format=raw
+
+(qemu-system-i386:500744): Gtk-WARNING **: 00:52:44.693: Theme parsing error: gtk.css:1048:16: 'border-spacing' is not a valid property name
+qemu-system-i386: -drive file=disk.img,format=raw: Could not open 'disk.img': No such file or directory
+make: *** [Makefile:58: run-qemu] Error 1
+
+🌿 sayed-umair-ali in ~/AraOS on 🌱 main [?] 
+❯ 
