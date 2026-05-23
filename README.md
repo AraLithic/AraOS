@@ -4,7 +4,7 @@ A minimal 32-bit x86 operating system written in C and Assembly, featuring a cus
 
 Built from scratch for learning low-level systems programming.
 
-![AraOS screenshot](print_screen.png)
+![AraOS screenshot](AraOS.png)
 
 ---
 
@@ -50,7 +50,7 @@ sudo dnf install gcc nasm qemu-system-x86 mtools xorriso make
 ## Building
 
 ```bash
-make primus-os.bin
+make ara-os.bin
 ```
 
 ---
@@ -70,7 +70,7 @@ make run-qemu
 ## Generating a bootable ISO
 
 ```bash
-make primus-os.iso
+make ara-os.iso
 ```
 
 ---
