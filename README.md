@@ -1,6 +1,6 @@
 # AraOS
 
-A minimal 32-bit x86 operating system written in C and Assembly, featuring a custom shell, FAT32 filesystem, ATA disk driver, and basic runtime (heap, math, crypto).
+A minimal monolith 32-bit x86 operating system written in C and Assembly, featuring a custom shell, FAT32 filesystem, ATA disk driver, and basic runtime (heap, math, crypto).
 
 Built from scratch for learning low-level systems programming.
 
